@@ -4,7 +4,7 @@ var path    = require('path');
 var postcss = require('postcss');
 var xmldoc  = require('xmldoc');
 
-var matchProp = /^(fill|stroke|stroke-width|color)$/;
+var matchProp = /^(fill|stroke|stroke-width|color|width|height)$/;
 var matchURL  = /(^|\s)url\(.+\.svg#.+\)(\s|$)/;
 
 module.exports = postcss.plugin('postcss-svg-fragments', function (opts) {
